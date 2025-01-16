@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #85d8ce, #085078);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    color: #ffedbc;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.header p {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    color: #d4fc79;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.main input {
+    width: 300px;
+    padding: 12px 15px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.main input:focus {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.main button {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    margin-left: 15px;
+    color: white;
+    background: #ff6f61;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.main button:hover {
+    background: #e0483c;
+    transform: scale(1.05);
+}
+
+.info {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    animation: fadeInUp 1.5s ease;
+}
+
+.info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffedbc;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.info h2 {
+    font-size: 1.8rem;
+    margin: 5px 0;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.info h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #d4fc79;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .main input {
+        margin-bottom: 10px;
+        width: 80%;
+    }
+
+    .main button {
+        width: 80%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
